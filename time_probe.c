@@ -16,7 +16,7 @@ ktime_t __probe_end;
 static int time_measure_start(void)
 {
 	__probe_start = ktime_get();
-	printk(">>> @END: %lld.\n", __probe_start.tv64);
+	printk(">>> @START: %lld.\n", __probe_start.tv64);
 	return 0;
 }
 EXPORT_SYMBOL(time_measure_start);
